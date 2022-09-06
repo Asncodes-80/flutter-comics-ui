@@ -14,7 +14,39 @@ and the Flutter guide for
 TODO: Put a short description of the package here that helps potential users
 know whether this package might be useful for them.
 
-## Features
+## Features|Design System
+
+_Note:_ Widgets will design in two type of Enable/Disable!
+
+- [ ] Inputs
+  - [ ] Buttons
+    - [ ] Standard Button
+    - [ ] Filled Button
+    - [ ] outLine -> Only Stroked
+    - [ ] Toggle Button
+  - [ ] CheckBox 
+    - [ ] Only Normal CheckBox
+  - [ ] Slider
+    - [ ] Horizontal
+    - [ ] Vertical
+  - [ ] ToggleSwitch
+    - [ ]  Only Simple ToggleSwitch
+- [ ] Form
+  - [ ] TextBoxes|TextFields|TextInputs
+  - [ ] Simple textFiled
+    - [ ] With Header
+    - [ ] With Placeholder
+    - [ ] Read Only 
+    - [ ] Multiline 
+- [ ] Surfaces
+  - [ ] Labels
+    - [ ] ComicalText
+  - [ ] RadioButtons
+  - [ ] Tiles 
+- [ ] Color Scheme
+  - [ ] Color System Design
+  - [ ] Font System
+  - [ ] Theme
 
 TODO: List what your package can do. Maybe include images, gifs, or videos.
 
@@ -37,3 +69,10 @@ const like = 'sample';
 TODO: Tell users more about the package: where to find more information, how to 
 contribute to the package, how to file issues, what response they can expect 
 from the package authors, and more.
+
+TODO: Add FontFace table about the `ComicText` widget. FontFace table will Contain
+all proper FontFaces about this project that user should users to have nice Text in 
+their project!
+
+
+
