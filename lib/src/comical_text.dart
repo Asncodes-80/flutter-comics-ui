@@ -52,7 +52,7 @@ class ComicText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        StrokedComicalText(
+        _StrokedComicalText(
           text: text,
           hasStroke: true,
           fontFace: fontFace,
@@ -67,7 +67,7 @@ class ComicText extends StatelessWidget {
             ),
           ],
         ),
-        StrokedComicalText(
+        _StrokedComicalText(
           text: text,
           hasStroke: true,
           fontFace: fontFace,
@@ -75,7 +75,7 @@ class ComicText extends StatelessWidget {
           strokeWidth: strokeWidth,
           strokeColor: textColors[1],
         ),
-        StrokedComicalText(
+        _StrokedComicalText(
           text: text,
           hasStroke: false,
           fontFace: fontFace,
@@ -87,16 +87,16 @@ class ComicText extends StatelessWidget {
   }
 }
 
-class StrokedComicalText extends StatelessWidget {
+class _StrokedComicalText extends StatelessWidget {
   /// # Stroked Comical Text Widget
   ///
-  /// All properties is defined in constructor that demonstrate
-  /// all type!
+  /// Private widget. All properties is defined in constructor
+  /// that demonstrate all type!
   ///
   /// _Note:_ with `hasStroke` property if it was true, the PaintingStyle
   /// will be stroke else will be fill, that demonstrate role of
   /// border color and fille color
-  const StrokedComicalText({
+  const _StrokedComicalText({
     Key? key,
     required this.text,
     this.hasStroke = false,
