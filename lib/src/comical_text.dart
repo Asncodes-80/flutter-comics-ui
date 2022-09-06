@@ -14,7 +14,9 @@ class ComicText extends StatelessWidget {
   ///
   /// - text: [String] Main Text
   /// - fontSize: [double] Text size
-  /// - fontFace: [String] Base on Locales
+  /// - fontFace: [String] Base on Locales. FontFace will come
+  /// from the flutter side. It will be base on custom [FontFace].
+  /// We implemented table of proper [FontFaces] related to this Widget.
   /// - strokeWidth: [double] Stroke width size
   /// - textColors: [List<Hex|Color>] List of colors
   ///
