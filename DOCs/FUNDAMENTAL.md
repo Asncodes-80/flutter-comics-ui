@@ -1,5 +1,7 @@
 # The Design System Fundamental
 
+## 
+
 ## The Four Design System Layers
 
 A design system can be broken into four layers:
@@ -49,4 +51,3 @@ Benefit of Design Tokens:
 - Tokens are a platform-agnostic format but they can be used
 in platform-specific code.
 - Tokens help maintain alignment and consistency in a design system.
-
