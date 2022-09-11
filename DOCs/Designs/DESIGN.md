@@ -1,18 +1,17 @@
-# Design Documentation
+# Flutter Comical UI Design Documentation
 
-At this documentation you will read about design system of this project. What is our components? How we customize their properties? How we can create new unique object? How we can work with CustomPainter and Patting Flutter classes to make new objects?
+We build Researchable and Incredible things, that you can use, contribute, improve yourself, and all things that you can
+enjoy by that. Comical UI Kit, Design System, is a one of the most beautiful and
 
-## Guidelines, widget and components
 
-## Palette, Theme and Colors, Typography
+## Palette, Colors and Typography
 
-All this section will divide to two topic, **Action** topic and **overall** topic. For example we have two colors, one about
+All this section will divide to two topic, **Action-Type** and **Overall-Type**. For example we have two colors. one about
 action colors and other about overall color. Action color is special form of color and it is two or three combination of colors.
-We have color palette triple any Actions color. In overall topic, we only have normal form of and object and Text and color and etc...
+We have triple color palette per Action colors. In overall topic, we only have normal form of objects, Typos, Colors and etc...
 
 
-
-At this project we use two locales, English and Persian (Fa). At English we use two main font family, Integral-CF and Poppins. Integral-CF with all their types, use it to headlines, some ink titles and somethings like that. Poppins will use to demonstrate bodies, some titles, labels, switches and etc...
+At this project we use two locales, **English** and **Persian**. At English we use two main font family, `Integral-CF` and `Poppins`. `Integral-CF` with all their types as **Action-Topic**, we made it for headlines, some ink titles. `Poppins` as `Overall-Type` will use to demonstrate bodies, some nonsignificant titles, labels and etc.
 
 We create a super simple widget in `/lib/widgets/comic_text.dart`. Contains three text layer inside of a `Stack`. The first Text is main Shadow of the text, Second text is Stroke of the text and at the last text is main text.
 
@@ -47,3 +46,8 @@ Common color scheme for good guys common color scheme for bad guys:
 |    Red and Yellow    |                 Iron Man and Daredevil                  |
 |   Green and Purple   |                     Not 100% heroes                     |
 | Green,Purple, Orange |          Bad guys tend to be secondary colors           |
+
+
+## Guidelines, widget and components
+
+TODO:
