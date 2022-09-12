@@ -1,7 +1,14 @@
 # Flutter Comical UI Design Documentation
 
 We build Researchable and Incredible things, that you can use, contribute, improve yourself, and all things that you can
-enjoy by that. Comical UI Kit, Design System, is a one of the most beautiful and
+enjoy by that. *The Comics UI Kit*, Design System, is a one of the most beautiful and nostalgic design that you can find.
+
+## Use cases
+
+Use `Comics UI Kit` every where. But most usage of that is in `Web3`, `GameFi` Apps and others. For more info about the
+`GameFi` application, that can be ether a game or an Application that you can earn money or any valuable things from that.
+`GameFi` is not same as `Gamification`. `GameFi` is base on Game + Finance. Gamification apps can be any things but is not
+necessary come with money or finance. Like `Duolingo` app.
 
 
 ## Palette, Colors and Typography
