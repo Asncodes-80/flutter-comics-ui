@@ -114,9 +114,11 @@ Process tie the two together.
   consistency and etc...
 - High-level explanations for things like multi-brand
   experiences, dark or light mode, or high contrast mode.
-- Numerous color levels such as neutral, primary brand color and secondary and tertiary color.
-- Explanations for the reasoning behind the color usage, such as communicating an
-  emotion, ensuring brand consistency, using colors to communicate hover or focus states, etc...
+- Numerous color levels such as neutral, primary brand color and secondary and
+  tertiary color.
+- Explanations for the reasoning behind the color usage, such as communicating
+  an emotion, ensuring brand consistency, using colors to communicate hover or
+  focus states, etc...
 
 #### Process
 
@@ -127,7 +129,8 @@ Process tie the two together.
 
 #### Assets
 
-- Due to the conceptual nature of the Foundations Layer, there are no assets for color
+- Due to the conceptual nature of the Foundations Layer, there are no assets for
+  color
 
 ### For Tokens layer: Color
 
@@ -162,7 +165,8 @@ Process tie the two together.
 - How each core system works
 - Best practices for using those systems
 - **Information on migrating to** and extending those system (describe some info
-  about your UI Kit system) - Identifying the current status of each system and who owns it
+  about your UI Kit system) - Identifying the current status of each system and
+  who owns it
 
 #### Process
 
