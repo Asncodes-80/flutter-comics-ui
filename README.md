@@ -31,13 +31,7 @@ and the Flutter guide for
 
 ## Preview UI Kit in Figma
 
-<iframe
-  style="border: 1px solid rgba(0, 0, 0, 0.1);"
-  width="800"
-  height="450"
-  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FH3BlXJ1mm34wj3onTA7TM7%2FComicsUI%3Fnode-id%3D1%253A4916%26t%3DHl59XBXJp79wflzB-1"
-  allowfullscreen>
-</iframe>
+[Preview](https://www.figma.com/community/file/1195066656824903909) Comics UI Kit Figma design.
 
 TODO: Put a short description of the package here that helps potential users
 know whether this package might be useful for them.
