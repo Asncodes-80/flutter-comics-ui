@@ -13,10 +13,10 @@ and the Flutter guide for
 
 <div align="center">
     <h1>The official Flutter Comics UI</h1>
-    <a title="pub.dev" href="https://pub.dartlang.org/packages/fluent_ui" >
-      <img src="https://img.shields.io/pub/v/fluent_ui.svg?style=flat&include_prereleases&color=dc143c" />
+    <a title="pub.dev" href="https://pub.dartlang.org/packages/flutter-comics-ui" >
+      <img src="https://img.shields.io/pub/v/flutter-comics-ui.svg?style=flat&include_prereleases&color=dc143c" />
     </a>
-    <a title="GitHub License" href="https://github.com/bdlukaa/fluent_ui/blob/master/LICENSE">
+    <a title="GitHub License" href="https://github.com/Asncodes-80/flutter-comics-ui/blob/master/LICENSE">
       <img src="https://img.shields.io/github/license/Asncodes-80/flutter-comics-ui?style=flat&color=ffff00" />
     </a>
     <a title="Made with Classic Comical Design" href="https://github.com/Asncodes-80/flutter-comics-ui">
