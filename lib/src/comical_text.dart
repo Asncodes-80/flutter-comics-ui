@@ -2,11 +2,10 @@ import "package:flutter/material.dart";
 
 /// # Comic Text Made for making DC Comic Text!
 ///
-/// A stateless widget that demonstrate a custom font
-/// to Comic style.
+/// A stateless widget that demonstrate a custom font to Comic style.
 ///
-/// There is some note about color palette in comic design.
-/// For more knowledge read DOCs `DESIGN.md`.
+/// There is some note about color palette in comic design. For more knowledge
+/// read DOCs `DESIGN.md`.
 ///
 /// This Widget make Comic text base on your properties!
 class ComicText extends StatelessWidget {
@@ -15,8 +14,8 @@ class ComicText extends StatelessWidget {
   /// - text: [String] Main Text
   /// - fontSize: [double] Text size
   /// - fontFace: [String] Base on Locales. FontFace will come
-  /// from the flutter side. It will be base on custom [FontFace].
-  /// We implemented table of proper [FontFaces] related to this Widget.
+  /// from the flutter side. It will be base on custom [FontFace].We implemented
+  /// table of proper [FontFaces] related to this Widget.
   /// - strokeWidth: [double] Stroke width size
   /// - textColors: [List<Hex|Color>] List of colors
   ///
@@ -92,12 +91,12 @@ class ComicText extends StatelessWidget {
 class _StrokedComicalText extends StatelessWidget {
   /// # Stroked Comical Text Widget
   ///
-  /// Private widget. All properties is defined in constructor
-  /// that demonstrate all type!
+  /// Private widget. All properties is defined in constructor that demonstrate
+  /// all type!
   ///
-  /// _Note:_ with `hasStroke` property if it was true, the PaintingStyle
-  /// will be stroke else will be fill, that demonstrate role of
-  /// border color and fille color
+  /// _Note:_ with `hasStroke` property if it was true, the PaintingStyle will
+  /// be stroke else will be fill, that demonstrate role of border color and
+  /// fille color
   const _StrokedComicalText({
     Key? key,
     required this.text,
