@@ -64,7 +64,7 @@ const double legendHSpace = 2.0;
 /// - status‌: [ActivityStatus] -> (none, low, medium, high)
 Widget makeDay(ActivityStatus status, BuildContext context) {
   // Init AppLocalization
-  AppLocalizations t = AppLocalizations.of(context);
+  // AppLocalizations t = AppLocalizations.of(context);
 
   // Specific color of container by activity status indicator
   Map<ActivityStatus, Color> genColor = {
@@ -134,7 +134,7 @@ class ComicBoard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppLocalizations t = AppLocalizations.of(context);
+    // AppLocalizations t = AppLocalizations.of(context);
 
     /// # Getting days as matrix of number
     ///
@@ -202,12 +202,12 @@ class ComicBoard extends StatelessWidget {
           child: Row(
             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                t.translate("eag.less"),
-                style: Styles.themeData(
-                  context,
-                ).textTheme.caption,
-              ),
+              // Text(
+              //   t.translate("eag.less"),
+              //   style: Styles.themeData(
+              //     context,
+              //   ).textTheme.caption,
+              // ),
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: legendHSpace),
               ),
@@ -215,12 +215,12 @@ class ComicBoard extends StatelessWidget {
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: legendHSpace),
               ),
-              Text(
-                t.translate("eag.more"),
-                style: Styles.themeData(
-                  context,
-                ).textTheme.caption,
-              ),
+              // Text(
+              //   t.translate("eag.more"),
+              //   style: Styles.themeData(
+              //     context,
+              //   ).textTheme.caption,
+              // ),
             ],
           ),
         ),

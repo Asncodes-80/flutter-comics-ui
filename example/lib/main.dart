@@ -1,4 +1,6 @@
+import 'package:example/config/resources.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_comics_ui/flutter_comics_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -95,8 +97,12 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            const ComicLabel(
+              text: "You have pushed the button this many times:",
+              fontFace: integralFontFace,
+              fontSize: 25,
+              strokeWidth: 5,
+              textColors: [Colors.yellow, Colors.black, Colors.red],
             ),
             Text(
               '$_counter',
