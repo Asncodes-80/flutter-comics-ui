@@ -12,21 +12,16 @@ class ComicLabel extends StatelessWidget {
   /// # Properties
   ///
   /// - text: [String] Main Text
-  /// - fontSize: [double] Text size
-  /// - fontFace: [String] Base on Locales. FontFace will come
-  /// from the flutter side. It will be base on custom [FontFace].We implemented
-  /// table of proper [FontFaces] related to this Widget.
   /// - strokeWidth: [double] Stroke width size
   /// - textColors: [List<Hex|Color>] List of colors
+  /// - style: [TextStyle] ThemeText TextStyle class
   ///
   /// ## EXAMPLE
   ///
   /// ```dart
   /// const ComicLabel
   ///    text: "Activities",
-  ///    fontSize: 40,
   ///    strokeWidth: 7,
-  ///    fontFace: integralFontFace,
   ///    textColors: [
   ///       Colors.black,
   ///       Colors.red,
@@ -36,100 +31,75 @@ class ComicLabel extends StatelessWidget {
   /// ```
   const ComicLabel({
     Key? key,
-    required this.text,
-    required this.fontFace,
-    required this.fontSize,
-    required this.strokeWidth,
+    this.text = "The Comical Label",
+    this.strokeWidth = 4,
     required this.textColors,
+    required this.style,
   }) : super(key: key);
 
   final String text;
-  final double fontSize;
   final double strokeWidth;
-  final String fontFace;
   final List<Color> textColors;
+  final TextStyle style;
 
   @override
   Widget build(BuildContext context) {
+    // Prepare Labels Layers in `Stack`, base on stroke colors list
+    final List<Widget> labelLayers = textColors
+        .asMap()
+        .entries
+        .map(
+          (color) => StrokedComicalLabel(
+            text: text,
+            hasStroke: color.key == textColors.length - 1 ? false : true,
+            strokeWidth:
+                (strokeWidth * ((textColors.length - 1.25) - color.key)),
+            strokeColor: color.value,
+            textStyle: style,
+          ),
+        )
+        .toList();
+
     return Stack(
-      children: [
-        _StrokedComicalText(
-          text: text,
-          hasStroke: true,
-          fontFace: fontFace,
-          fontSize: fontSize,
-          strokeWidth: strokeWidth * 2,
-          strokeColor: textColors[0],
-          textShadow: [
-            Shadow(
-              offset: Offset(10.0, strokeWidth),
-              blurRadius: 30.0,
-              color: Colors.black,
-            ),
-          ],
-        ),
-        _StrokedComicalText(
-          text: text,
-          hasStroke: true,
-          fontFace: fontFace,
-          fontSize: fontSize,
-          strokeWidth: strokeWidth,
-          strokeColor: textColors[1],
-        ),
-        _StrokedComicalText(
-          text: text,
-          hasStroke: false,
-          fontFace: fontFace,
-          fontSize: fontSize,
-          strokeColor: textColors[2],
-        ),
-      ],
+      children: labelLayers,
     );
   }
 }
 
-class _StrokedComicalText extends StatelessWidget {
+class StrokedComicalLabel extends StatelessWidget {
   /// # Stroked Comical Text Widget
   ///
   /// Private widget. All properties is defined in constructor that demonstrate
   /// all type!
   ///
-  /// _Note:_ with `hasStroke` property if it was true, the PaintingStyle will
+  /// _Note_: with `hasStroke` property if it was true, the PaintingStyle will
   /// be stroke else will be fill, that demonstrate role of border color and
-  /// fille color
-  const _StrokedComicalText({
+  /// fill color
+  const StrokedComicalLabel({
     Key? key,
     required this.text,
     this.hasStroke = false,
-    required this.fontFace,
-    required this.fontSize,
     this.strokeWidth,
     this.strokeColor,
-    this.textShadow,
+    this.textStyle,
   }) : super(key: key);
 
   final String text;
   final bool hasStroke;
-  final String fontFace;
-  final double fontSize;
   final double? strokeWidth;
   final Color? strokeColor;
-  final List<Shadow>? textShadow;
+  final TextStyle? textStyle;
 
   @override
   Widget build(BuildContext context) {
+    late Paint foregroundPainter = Paint()
+      ..style = hasStroke ? PaintingStyle.stroke : PaintingStyle.fill
+      ..strokeWidth = strokeWidth ?? 0
+      ..color = strokeColor ?? Colors.transparent;
+
     return Text(
       text,
-      style: TextStyle(
-        fontFamily: fontFace,
-        fontSize: fontSize,
-        fontStyle: FontStyle.italic,
-        shadows: textShadow ?? [],
-        foreground: Paint()
-          ..style = hasStroke ? PaintingStyle.stroke : PaintingStyle.fill
-          ..strokeWidth = strokeWidth ?? 0
-          ..color = strokeColor ?? Colors.transparent,
-      ),
+      style: textStyle?.copyWith(foreground: foregroundPainter),
     );
   }
 }
