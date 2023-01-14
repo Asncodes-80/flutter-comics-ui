@@ -34,7 +34,6 @@ flutter_jank_*.json
 /build/
 
 # Web related
-lib/generated_plugin_registrant.dart
 
 # Symbolication related
 app.*.symbols
