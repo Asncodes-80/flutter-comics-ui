@@ -30,7 +30,7 @@ jobs:
           git init
           git config user.name "Asncodes-80"
           git config user.email "asn80.asn@hotmail.com"
-          git remote add secure-origin https://username:${GITHUB_TOKEN}@github.com/flutter-comics-ui.git
+          git remote add secure-origin https://username:${GITHUB_TOKEN}@github.com/Asncodes-80/flutter-comics-ui.git
           git checkout -b gh-pages
           git add .
           git commit -m "ci(gh-pages): update and deploy web app"
