@@ -36,6 +36,14 @@ and the Flutter guide for
 TODO: Put a short description of the package here that helps potential users
 know whether this package might be useful for them.
 
+## Basics
+
+### (wip) Main ComicsApp foundation
+- [ ] ComicsApp, `app.dart` instead of MaterialApp
+- [ ] `ComicsPageRoute<T>`
+- [ ] `ComicsTheme` as StatelessWidget
+- [ ] `AnimatedComicsTheme`
+
 ## Features|Design System
 
 _Note:_ Widgets will design in two type of Enable/Disable!
