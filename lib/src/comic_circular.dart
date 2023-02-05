@@ -90,9 +90,7 @@ class CircularPainter extends CustomPainter {
       ..strokeWidth = filledStrokeWidth
       ..strokeCap = StrokeCap.round;
 
-    /// ## Progressive circle canvas
-    ///
-    /// Show the activities progress in this canvas.
+    // Progressive circle canvas Show the activities progress in this canvas
     canvas.drawArc(
       rect,
       math.pi,
@@ -102,9 +100,7 @@ class CircularPainter extends CustomPainter {
       strokeFilledPaint,
     );
 
-    /// ## Full circle canvas
-    ///
-    /// Show a full circle behind of the progressive circle.
+    // Full circle canvas Show a full circle behind of the progressive circle
     canvas.drawArc(
       rect,
       math.pi,
@@ -137,11 +133,9 @@ class CircularActivity extends StatelessWidget {
   /// - stepProgress: [required double] -> Value should be pedometer value and
   /// we must save it in a provider that can use in anywhere what developer
   /// want. Inside of the provider we should use save storage functionality, to
-  /// save value of the pedometer, // TODO: This functionality is overkill or
-  /// not?
-  ///  - heartPtsProgress: [required double] -> ? // TODO: Learn about the Cal
-  /// and HeartPts.
-  ///  - stepIndicator: [required double] -> Indicator of stepProgress.  Users
+  /// save value of the pedometer,
+  /// - heartPtsProgress: [required double] -> ?
+  /// - stepIndicator: [required double] -> Indicator of stepProgress.  Users
   ///  will set some target value to starting their exercise, for example they
   ///  should set pedometer target value in per day, like 10,000 step per day.
   ///  This is step indicator of the users that will do walking or somethings
@@ -151,7 +145,7 @@ class CircularActivity extends StatelessWidget {
   ///  that i specify at first in this app.
   /// _Note:_ Target value can change in settings or preferences fo the app.
   ///
-  ///  - heartPtsIndicator: [required double] -> Indicator of heartPtsProgress
+  /// - heartPtsIndicator: [required double] -> Indicator of heartPtsProgress
   /// to calculate progress value of the `CircularActivity`.
   ///
   /// _Note:_ Divide of the stepCount on stepIndicator is progress of step
@@ -230,7 +224,7 @@ class CircularActivity extends StatelessWidget {
         bgRing: heartBgRing,
       ),
 
-      /// Step count (Green color)
+      // Step count (Green color)
       child: CustomPaint(
         painter: CircularPainter(
           progressPercent: pedometerProgress,
