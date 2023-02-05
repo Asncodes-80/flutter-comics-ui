@@ -1,8 +1,10 @@
 import 'package:example/config/resources.dart';
+import 'package:example/config_nonweb.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_comics_ui/flutter_comics_ui.dart';
 
 void main() {
+  configApp();
   runApp(const MyApp());
 }
 
